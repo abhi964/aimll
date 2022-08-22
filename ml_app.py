@@ -42,9 +42,9 @@ if user_input and button :
     # test_sample
     doc=nlp(user_input)
     for token in doc[0]:
-        if d.ent_type_=="GPE":
+        if token.ent_type_=="GPE":
             st.write("It is City")
-        if d.ent_type_=='PERSON':
+        if token.ent_type_=='PERSON':
             st.write('Person')
         else:
             st.write('Neither city nor Person')
