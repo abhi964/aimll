@@ -40,7 +40,8 @@ button = st.button("Predict")
 
 if user_input and button :
     # test_sample
-    token=nlp(user_input)
+    input=user_input+'is'
+    token=nlp(input)
     token.ent_type_
     #if token.ent_type_=="GPE":
      #   st.write("It is City")
