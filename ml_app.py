@@ -41,8 +41,7 @@ button = st.button("Predict")
 if user_input and button :
     # test_sample
     token=nlp(user_input)
-    for ent in token.ents:
-        st.write(ent.ent_type_)
+    token.ent_type_
     #if token.ent_type_=="GPE":
      #   st.write("It is City")
    # if token.ent_type_=='PERSON':
