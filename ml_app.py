@@ -7,7 +7,7 @@ import string
 @st.cache
 def download_spacy():
     # Fetch data from URL here, and then clean it up.
-    spacy.cli.download("en_core_web_sm")
+    spacy.cli.download("en_core_web_lg")
 
 download_spacy()
 
