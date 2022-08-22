@@ -40,7 +40,7 @@ button = st.button("Predict")
 
 if user_input and button :
     # test_sample
-    d=nlp([user_input])
+    d=nlp(user_input)
     if d.ent_type_=="GPE":
         st.write("It is City")
     if d.ent_type_=='PERSON':
