@@ -43,11 +43,11 @@ if user_input and button :
     input=user_input+" "+'is'
     st.write(input)
     token=nlp(input)
-    token.ents
-    #if token.ent_type_=="GPE":
-     #   st.write("It is City")
-   # if token.ent_type_=='PERSON':
-    #    st.write('Person')
-   # else:
-   #     st.write('Neither city nor Person')*
+    for ent in token.ents:
+        if ent.ent_type_=="GPE":
+            st.write("It is City")
+        if ent.ent_type_=='PERSON':
+            st.write('Person')
+        else:
+            st.write('Neither city nor Person')*
 
