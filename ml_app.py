@@ -40,7 +40,7 @@ button = st.button("Predict")
 
 if user_input and button :
     # test_sample
-    input=user_input+" "+'is'
+    input=user_input+" "+'is'+' '+"USA"
     st.write(input)
     token=nlp(input)
     token.ents
