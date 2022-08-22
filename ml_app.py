@@ -49,5 +49,5 @@ if user_input and button :
         if ent.ent_type_=='PERSON':
             st.write('Person')
         else:
-            st.write('Neither city nor Person')*
+            st.write('Neither city nor Person')
 
