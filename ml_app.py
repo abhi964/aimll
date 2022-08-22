@@ -44,11 +44,13 @@ if user_input and button :
     st.write(input)
     token=nlp(input)
     token.ents
-    for ent in token.ents:
-        if ent.ent_type_=="GPE":
-            st.write("It is City")
-        if ent.ent_type_=='PERSON':
-            st.write('Person')
-        else:
-            st.write('Neither city nor Person')
+    from spacy import displacy
+    st.write(displacy.render(token, style="ent", jupyter=True))
+    #for ent in token.ents:
+     #   if ent.ent_type_=="GPE":
+       #     st.write("It is City")
+        #if ent.ent_type_=='PERSON':
+         #   st.write('Person')
+        #else:
+         #   st.write('Neither city nor Person')
 
