@@ -40,11 +40,12 @@ button = st.button("Predict")
 
 if user_input and button :
     # test_sample
-    d=nlp(user_input)
-    if d.ent_type_=="GPE":
-        st.write("It is City")
-    if d.ent_type_=='PERSON':
-        st.write('Person')
-    else:
-        st.write('Neither city nor Person')
+    doc=nlp(user_input)
+    for token in doc[0]:
+        if d.ent_type_=="GPE":
+            st.write("It is City")
+        if d.ent_type_=='PERSON':
+            st.write('Person')
+        else:
+            st.write('Neither city nor Person')
 
