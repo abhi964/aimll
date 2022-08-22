@@ -43,6 +43,7 @@ if user_input and button :
     input=user_input+" "+'is'
     st.write(input)
     token=nlp(input)
+    token.ents
     for ent in token.ents:
         if ent.ent_type_=="GPE":
             st.write("It is City")
