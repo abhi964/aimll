@@ -42,7 +42,7 @@ if user_input and button :
     # test_sample
     input=user_input
     st.write(input)
-    token=nlp(input)
+    token=nlp.make_doc(input)
     token.ents
     from spacy import displacy
     st.write(displacy.render(token, style="ent", jupyter=True))
